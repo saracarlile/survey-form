@@ -27,6 +27,7 @@ h1 {
     text-align: right;
     vertical-align: top;
     margin-top: 10px;
+    font-weight: 500;
 }
 
 .feedback-controls {
