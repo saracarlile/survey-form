@@ -1,0 +1,156 @@
+body {
+    background-color: #E8DDD5;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    min-width: 320px;
+}
+
+main {
+    background-color: rgb(250, 250, 250);
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 75%;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 2.2em;
+    margin: 10px 0px;
+}
+
+.labels {
+    display: inline-block;
+    width: 37%;
+    text-align: right;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.feedback-controls {
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+input {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+select {
+    font-size: .9em;
+    padding: 5px;
+    margin-top: 15px;
+    margin: 10px;
+    height: 35px;
+    border: 1px solid #c0c0c0;
+}
+
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px 0px 5px;
+}
+
+input:focus, input:active, select:focus, select:active {
+    animation-duration: 50ms;
+    animation-name: focus;
+    animation-fill-mode: forwards;
+}
+
+@keyframes focus {
+    100% {
+        -webkit-box-shadow: 5px 4px 5px 0px rgba(158, 153, 158, 1);
+        -moz-box-shadow: 5px 4px 5px 0px rgba(158, 153, 158, 1);
+        box-shadow: 5px 4px 5px 0px rgba(158, 153, 158, 1);
+        outline: 2px solid #9e7b9e;
+    }
+}
+
+#radios {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#radios li {
+    margin-bottom: 1px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px 0px 5px;
+}
+
+.boxes li {
+    margin-bottom: 1px;
+}
+
+#submit {
+    max-width: 200px;
+    background-color: #a9d7d1;
+    color: black;
+    border-radius: 2px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+textarea {
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+#submit:hover {
+    animation-duration: 50ms;
+    animation-name: focus;
+    animation-fill-mode: forwards;
+}
+#submit:active {
+    animation-duration: 50ms;
+    animation-name: enlarge;
+    animation-fill-mode: forwards;
+}
+
+@keyframes enlarge {
+    100% {
+       max-width: 203px;
+       height: 42px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .labels {
+        display: flex;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 2px;
+    }
+    .feedback-controls {
+        display: flex;
+        width: 100%;
+    }
+    input, select {
+        margin-left: 1px;
+    }
+    #submit {
+        margin-top: 10px;
+    }
+
+}

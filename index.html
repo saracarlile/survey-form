@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Survey Form</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"</script>
+		<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/custom.css">
+</head>
+
+<body>
+	<header>
+		<h1 id="title">Survey Form</h1>
+	</header>
+	<main>
+		<p id="description">Let us know how we can improve your salon experience at Luxury Hair Salon</p>
+		<form id="survey-form">
+			<div class="row">
+				<div class="labels">
+					<label for="name" id="name-label">*Name:</label>
+				</div>
+				<div class="feedback-controls">
+					<input type="text" id="name" name="name" maxlength="40" placeholder="Enter your name" pattern="[A-Za-z\s]+" required>
+					<!-- allows letters only-->
+				</div>
+			</div>
+			<div class="row">
+				<div class="labels">
+					<label for="email" id="email-label">*Email:</label>
+				</div>
+				<div class="feedback-controls">
+					<input type="email" placeholder="Enter your Email" id="email" name="email" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="labels">
+					<label for="number" id="number-label">*Age:</label>
+				</div>
+				<div class="feedback-controls">
+					<input type="number" placeholder="Enter your age" id="number" name="age" min="1" max="110" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="labels">
+					<label for="dropdown">What service do you want to review that you received today?</label>
+				</div>
+				<div class="feedback-controls">
+					<select id="dropdown">
+						<option value="">--Please choose an option--</option>
+						<option value="haircut">Haircut</option>
+						<option value="haircolor">Hair Color</option>
+						<option value="highlights">Highlights</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="labels">
+					<label for="quality">How would you rate the quality of the service?</label>
+				</div>
+				<div class="feedback-controls">
+					<select id="quality">
+						<option value="">--Please choose an option--</option>
+						<option value="excellent">Excellent</option>
+						<option value="good">Good</option>
+						<option value="fair">Average</option>
+						<option value="poor">Below Average</option>
+					</select>
+				</div>
+			</div>
+			<fieldset class="row">
+				<div class="labels">
+					<legend>How likely is that you would recommend Luxury Hair Salon to a friend?</legend>
+				</div>
+				<div class="feedback-controls">
+					<ul id="radios">
+						<li class="radio">
+							<input name="radio-buttons" value="1" id="yes" type="radio">
+							<label for="yes">Definitely</label>
+						</li>
+						<li class="radio">
+							<input name="radio-buttons" id="maybe" value="2" type="radio">
+							<label for="maybe">Maybe</label>
+						</li>
+						<li class="radio">
+							<input name="radio-buttons" value="3" id="undecided" type="radio">
+							<label for="undecided">Not sure</label>
+						</li>
+					</ul>
+				</div>
+			</fieldset>
+			<div class="row">
+					<div class="labels">
+						<label for="stylist">Which stylisht did you see today?</label>
+					</div>
+					<div class="feedback-controls">
+						<select id="stylist">
+							<option value="">--Please choose an option--</option>
+							<option value="cindy">Cindy</option>
+							<option value="amber">Amber</option>
+							<option value="mark">Mark</option>
+							<option value="rachel">Rachel</option>
+						</select>
+					</div>
+				</div>
+			<fieldset class="row">
+				<div class="labels">
+					<legend>What should we add to improve your experience at Luxury Hair Salon?</legend>
+				</div>
+				<div class="feedback-controls">
+					<ul class="boxes">
+						<li>
+							<input type="checkbox" id="booking" name="feature" value="booking" />
+							<label for="booking">Online Booking</label>
+						</li>
+						<li>
+							<input type="checkbox" id="snacks" name="feature" value="snacks" />
+							<label for="snacks">Free Snacks</label>
+						</li>
+						<li>
+							<input type="checkbox" id="hours" name="feature" value="hours" />
+							<label for="hours">Extended Salon Hours</label>
+						</li>
+					</ul>
+				</div>
+			</fieldset>
+			<div class="row">
+				<div class="labels">
+					<label for="comments">Do you have any additional comments?</label>
+				</div>
+				<div class="feedback-controls">
+					<textarea id="comments" name="textarea" rows="3" cols="37" maxlength="300"
+					wrap="hard"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<input type="submit" id="submit" placeholder="Submit">
+			</div>
+		</form>
+
+	</main>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
