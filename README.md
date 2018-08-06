@@ -41,8 +41,7 @@ User Story #16: Inside the form element, I am presented with a button with id="s
 [View live demo of Build a Survey Form](https://saracarlile.github.io/survey-form/)
 
 ## Technologies
-HTML5, CSS3, Accessible
-Responsive Design.
+HTML5, CSS3, Web Accessibility Standards, Responsive Design.
 
 Acessibility evaluated using WAVE's Web Accessibility Evaluation Tool
 [View WAVE web accessibility evaluation tool](https://wave.webaim.org/)
